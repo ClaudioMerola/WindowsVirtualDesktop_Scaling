@@ -66,7 +66,7 @@
             if($VMsOn.count -ge 2)
                 {
                     Write-Output "Stopping '$($VMsOn[0].Name)' ...";			
-                    Stop-AzVM -ResourceGroupName $AzureResourceGroup -Name $VMsOn[0].Name;
+                    Stop-AzVM -ResourceGroupName $AzureResourceGroup -Name $VMsOn[0].Name -force;
                 }
             else
                 {
